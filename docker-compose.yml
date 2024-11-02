@@ -1,0 +1,18 @@
+services:
+  laravel-app:
+    build:
+      context: ./back-end       # Caminho para o diretório do Dockerfile
+      dockerfile: Dockerfile     # Nome do Dockerfile no diretório "back-end"
+    container_name: laravel-app
+    ports:
+      - "8081:80"                # Expõe a porta 80 do container na porta 8080 do host
+    volumes:
+      - ./back-end:/var/www/html # Monta o diretório "back-end" no diretório de trabalho do container
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html/public
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
