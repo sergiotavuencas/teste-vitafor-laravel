@@ -13,12 +13,10 @@ return new class extends Migration
     {
         Schema::create('characters', function (Blueprint $table) {
             $table->id();
-            $table->integer('api_id');
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->integer('api_id');
             $table->string('name');
             $table->string('species');
-            $table->string('gender');
-            $table->json('location');
             $table->string('image');
             $table->string('url');
             $table->timestampsTz(precision: 0);

@@ -5,9 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Symfony\Component\HttpFoundation\Response;
 
 class AuthController extends Controller
 {
+    private function userDTO(User $user) {
+        return [
+            'name' => $user->name,
+            'email' => $user->email,
+        ];
+    }
+
     public function register(Request $request)
     {
         $fields = $request->validate([
@@ -21,9 +29,9 @@ class AuthController extends Controller
         $token = $user->createToken($request->name);
 
         return response([
-            'user' => $user,
+            'user' => $this->userDTO($user),
             'token' => $token->plainTextToken
-        ]);
+        ], Response::HTTP_CREATED);
     }
 
     public function login(Request $request)
@@ -37,16 +45,17 @@ class AuthController extends Controller
 
         if (!$user || !Hash::check($request->password, $user->password)) {
             return response([
-                'message' => 'Invalid credentials.'
-            ]);
+                'errors' => 'The provided credentials are incorrect.'
+            ], Response::HTTP_UNAUTHORIZED);
         }
 
+        $user->tokens()->delete();
         $token = $user->createToken($user->name);
 
         return response([
-            'user' => $user,
+            'user' => $this->userDTO($user),
             'token' => $token->plainTextToken
-        ]);
+        ], Response::HTTP_OK);
     }
 
     public function logout(Request $request)
@@ -55,6 +64,6 @@ class AuthController extends Controller
 
         return response([
             'message' => 'Logged out.'
-        ]);
+        ], Response::HTTP_ACCEPTED);
     }
 }
