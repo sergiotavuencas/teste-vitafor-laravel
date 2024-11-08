@@ -8,6 +8,7 @@ Este projeto é uma aplicação desenvolvida com Laravel para o backend e React.
 - Composer >= 2.0
 - Node.js >= 14.0 e npm (ou Yarn como alternativa)
 - Git para controle de versão
+- Docker caso queira utilizar contêineres
 
 ## Passos
 
@@ -20,6 +21,15 @@ cd teste-vitafor-laravel
 Para os próximos passos recomendo que utilze dois terminais, um para rodar o back-end, e outro para rodar o front-end. Os comandos iniciam na raiz do projeto, então sempre execute a partir do mesmo.
 
 ### 2. Rodando o back-end
+
+*** COM DOCKER ***
+```
+docker compose up -d
+```
+
+***OBS: Caso queira rodar a aplicação em outra porta, no arquivo "compose.yml", altere o valor "8000" em "ports" para a rota que desejar, mas será necessário alterar a configuração do front-end também, então antes de executar o terceiro passo, pule para a seção [Problema](#problema-com-a-rota-do-laravel)***
+
+*** SEM DOCKER ***
 ```
 cd back-end
 composer install
