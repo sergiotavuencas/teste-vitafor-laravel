@@ -1,0 +1,40 @@
+.about-content {
+  background-color: var(--color-light-blue);
+  border: solid 5px var(--color-darker-blue);
+  width: 75%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 60px;
+}
+
+.about-content *> h1,
+h2,
+h3,
+a,
+span,
+strong,
+p {
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+}
+
+.about-content * > ul {
+  color: var(--color-white);
+}
+
+.about-name {
+  font-weight: bold;
+}
+
+.about-position {
+  font-weight: bold;
+}
+
+.about-section {
+  font-weight: bold;
+}
+
+.project-name {
+  color: var(--color-white);
+}

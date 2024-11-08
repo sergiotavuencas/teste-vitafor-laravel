@@ -1,0 +1,60 @@
+.Register {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.register-forms-content {
+  width: 30%;
+  padding: 5px;
+  background-color: var(--color-light-green);
+  margin: 5%;
+  border: solid 5px var(--color-darker-green);
+  border-radius: 15px;
+}
+
+.register-title {
+  font-family: var(--font-roboto);
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input {
+  margin-bottom: 2px;
+}
+
+.register-btn-register {
+  font-family: var(--font-roboto);
+  font-size: 20px;
+  color: var(--color-darker-green);
+  border: solid var(--color-darker-green);
+  background-color: var(--color-white);
+  width: 150px;
+  height: 50px;
+}
+
+.register-btn-register:hover {
+  font-family: var(--font-roboto);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-white);
+  border: solid var(--color-dark-pink);
+  background-color: var(--color-dark-pink);
+}
+
+.register-btn-register:active {
+  font-family: var(--font-roboto) !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: var(--color-white) !important;
+  border: solid var(--color-dark-pink) !important;
+  background-color: var(--color-dark-pink) !important;
+}

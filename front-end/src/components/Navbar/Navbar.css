@@ -1,0 +1,100 @@
+@import "../../vars.css";
+
+.Navbar {
+  background-color: var(--color-white);
+  padding: 5px;
+  border-bottom: solid 4px var(--color-light-green);
+}
+
+.logo img {
+  height: 65px !important;
+  margin-left: 10px;
+  border: none;
+}
+
+.user-name {
+  margin-right: 0.5rem !important;
+  display: inline-block !important;
+  border: none !important;
+  color: var(--color-darker-green);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.user-name:hover {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--color-darker-green);
+  font-weight: bold;
+  cursor: auto;
+}
+
+.btn-register {
+  font-family: var(--font-roboto);
+  color: var(--color-light-green);
+  border: solid var(--color-light-green);
+}
+
+.btn-register:hover {
+  color: var(--color-darker-green);
+  border: solid var(--color-dark-green);
+  background-color: var(--color-light-green);
+  font-weight: bold;
+}
+
+.btn-register:active {
+  color: var(--color-darker-green) !important;
+  border: solid var(--color-dark-green) !important;
+  background-color: var(--color-light-green) !important;
+  font-weight: bold !important;
+}
+
+.btn-login {
+  font-family: var(--font-roboto);
+  color: var(--color-light-blue);
+  border: solid var(--color-light-blue);
+  background-color: transparent;
+}
+
+.btn-login:hover {
+  color: var(--color-darker-blue);
+  border: solid var(--color-dark-blue);
+  background-color: var(--color-light-blue);
+  font-weight: bold;
+}
+
+.btn-login:active {
+  color: var(--color-darker-blue) !important;
+  border: solid var(--color-dark-blue) !important;
+  background-color: var(--color-light-blue) !important;
+  font-weight: bold !important;
+}
+
+.btn-logout {
+  font-family: var(--font-roboto);
+  color: var(--color-light-pink);
+  border: solid var(--color-light-pink);
+  background-color: transparent;
+}
+
+.btn-logout:hover {
+  color: var(--color-darker-pink);
+  border: solid var(--color-dark-pink);
+  background-color: var(--color-light-pink);
+  font-weight: bold;
+}
+
+.btn-logout:active {
+  color: var(--color-darker-pink) !important;
+  border: solid var(--color-dark-pink) !important;
+  background-color: var(--color-light-pink) !important;
+  font-weight: bold !important;
+}
+
+.link {
+  color: var(--color-dark-pink);
+}
+
+.link:hover {
+  color: var(--color-dark-green);
+}
