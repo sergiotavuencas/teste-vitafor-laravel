@@ -1,59 +1,55 @@
-# Teste para desenvolvedor - Vitafor
+# Aplicação Rick and Morty
 
-## Tecnologias a serem utilizadas
+Este projeto foi desenvolvido para testar minhas habilidades com uma stack tecnológica que inclui Laravel, SQLite e ReactJS. A aplicação consome dados da API pública de Rick and Morty, permitindo navegar e explorar informações de personagens. Funcionalidades implementadas:
+
+## Tecnologias utilizadas
 
 -   Laravel
 -   SQLite
--   Front-end com Requisições assíncronas Javascript e Bootstrap 5.
-
-## Aplicação para exibir personagens
-
-Desenvolva uma aplicação que irá consumir a API do [Rick and Morty](https://rickandmortyapi.com/) e irá apresentar a estrutura/menu abaixo:
-
--   Home
--   Personagens
--   Sobre
--   Login / Cadastro
+-   ReactJS
+-   Bootstrap
 
 ## Páginas da aplicação
 
 **HOME**
 
-A Home deverá conter uma listagem de personagens vindos diretamente da [API](https://rickandmortyapi.com/), o layout da tela deverá ser o seguinte:
+A Home exibe uma listagem dos personagens vindos da [API](https://rickandmortyapi.com/) e com paginação. Os personagens são dispostos como cards com uma imagem, nome e um botão que leva para a página de detalhes do mesmo:
 
 ![HOME](./blockframe-home.png)
 
-Eles devem estar dispostos como uma lista de cards que permitem que o usuário clique e abra uma página de maiores detalhes do personagem, página de detalhes do personagem.
-
-**DETALHES DO PERSONAGEM**
-
-Esta página deverá seguir o seguinte layout:
-
-![Detalhe do Personagem](./blockframe-detalhes-personagem.png)
-
-O botão do canto inferior direito deve permitir que o usuário salve esse personagem à um banco de dados local, as informações que deverão ser salvas são:
-
-    { name, species, image, url, created_at, updated_at }
-
-Caso essa tela tenha sido aberta vindo da HOME, o botão deverá estar visível e as informações exibidas serão as vindas da API, caso ela tenha sido aberta vindo da página de personagens o botão não ficará disponível e as informações à serem exibidas serão as que estão salvas no banco de dados local. As informações que serão exibidas vindas da API são:
-
-    { name, species, gender, location, image, url }
-
-Caso o personagem já esteja salvo no banco de dados local, esta tela deverá permitir que o usuário exclua o registro e edite as informações.
-
 **PERSONAGENS**
 
-Está tela deverá ser similar à HOME com diferença de que apenas irá exibir os personagens que já estão salvos no banco de dados local. Também deverá permitir a visualização de detalhes ao clicar no personagem, direcionando assim para a tela de DETALHES DO PERSONAGEM.
+Tela similar a "Home", a única diferença além das cores é que as informações dos personagens vem do banco de dados local, ou seja, dos personagens salvos pelos usuários:
 
 ![PERSONAGENS](./blockframe-personagens.png)
 
-**SOBRE**
+**DETALHES DO PERSONAGEM**
 
-Está deverá ser uma página livre, onde você irá apresentar um mini currículo seu. Aqui você irá se apresentar, por links para sites que você desenvolveu, projetos e tudo que você achar interessante nos mostrar.
+***OBS: As ações de Salvar, Atualizar e Deletar são permitidas apenas a usuário logados atráves dos tokens gerados que são utilizados para controle de requisições.***
+
+Caso o usuário tenha vindo da página "Home", lhe é permitido "Salvar" as seguintes informações do personagem:
+
+    { name, species, gender, location, image, url }
+
+Além de permitir navegar até o "Link" original da API para consultar as informações listadas.
+
+![Detalhe do Personagem](./blockframe-detalhes-personagem.png)
+
+Ao clicar em salvar as seguintes informações serão armazenadas no banco de dados local:
+
+    { name, species, image, url, created_at, updated_at }
+
+Caso o usuário tenha vindo da página "Personagens", lhe é permitido "Editar" e "Deletar", e portanto, é possível editar as seguintes informações:
+
+    { name, species }
+
+![Detalhe do Personagem](./blockframe-editar-personagem.png)
 
 **LOGIN / CADASTRO**
 
-O usuário deverá poder se cadastrar e logar com o cadastro realizado. O usuário só poderá salvar um personagem caso ele esteja logado no sistema, caso não esteja e clique no botão para salvar o personagem, ele deve ser direcionado para a tela de LOGIN / CADASTRO.
+Páginas de cadastro e login, onde as seguintes informações do usuário são salvas no banco de dados local:
+
+    { name, email, password }
 
 ### Tela de login
 
@@ -62,3 +58,9 @@ O usuário deverá poder se cadastrar e logar com o cadastro realizado. O usuár
 ### Tela de cadastro
 
 ![LOGIN](./blockframe-cadastro.png)
+
+**SOBRE**
+
+Mini currículo com links para minhas redes sociais, um breve resumo, habilidades, e a melhor parte, projetos que desenvolvi:
+
+![SOBRE](./blockframe-sobre.png)

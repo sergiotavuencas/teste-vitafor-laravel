@@ -104,6 +104,13 @@ export default function CharacterDetail() {
             </div>
           </div>
           <div className="col py-4 detail-btn-container">
+            <a
+              className="btn btn-outline-primary col-md-auto me-2 detail-btn-save"
+              href={characterData.url}
+              target="_blank"
+            >
+              Link
+            </a>
             <button
               className="btn btn-outline-primary col-md-auto detail-btn-save"
               onClick={handleSave}
