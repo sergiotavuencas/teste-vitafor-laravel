@@ -1,0 +1,28 @@
+services:
+  laravel-app:
+    build:
+      context: ./back-end
+      dockerfile: Dockerfile
+    container_name: laravel-app
+    ports:
+      - "8000:80"
+    volumes:
+      - ./back-end:/var/www/html
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html/public
+    networks:
+      - app-network
+
+  # frontend:
+  #   build:
+  #     context: ./front-end
+  #     dockerfile: Dockerfile
+  #   container_name: react-frontend
+  #   ports:
+  #     - "5173:5173"
+  #   networks:
+  #     - app-network
+
+networks:
+  app-network:
+    driver: bridge
