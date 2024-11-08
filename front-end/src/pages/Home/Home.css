@@ -1,0 +1,32 @@
+.home-content {
+  padding-top: 35px;
+}
+
+.home-actions {
+  background-color: var(--color-light-green);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: solid 5px var(--color-darker-green);
+  width: 30%;
+  display: inline-block;
+}
+
+.home-btn-page {
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  border: solid var(--color-darker-pink);
+  background-color: var(--color-dark-pink);
+}
+
+.home-btn-page:hover {
+  color: var(--color-white);
+  border: solid var(--color-darker-green);
+  background-color: var(--color-dark-green);
+}
+
+.home-btn-page:active {
+  color: var(--color-white) !important;
+  border: solid var(--color-darker-green) !important;
+  background-color: var(--color-dark-green) !important;
+}

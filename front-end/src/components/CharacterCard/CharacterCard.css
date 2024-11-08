@@ -1,0 +1,62 @@
+@import "../../vars.css";
+
+.home-card {
+  border: solid 5px var(--color-darker-green);
+  background-color: var(--color-light-green);
+}
+
+.characters-card {
+  border: solid 5px var(--color-darker-pink);
+  background-color: var(--color-light-pink);
+}
+
+.card-image {
+  width: 90%;
+  padding: 10px 5px 5px 5px;
+  border-radius: 20px;
+}
+
+.card-name {
+  color: var(--color-dark);
+  font-family: var(--font-roboto);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-btn-details {
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  border: solid var(--color-darker-pink);
+  background-color: var(--color-dark-pink);
+}
+
+.home-btn-details:hover {
+  color: var(--color-white);
+  border: solid var(--color-darker-green);
+  background-color: var(--color-dark-green);
+}
+
+.home-btn-details:active {
+  color: var(--color-white) !important;
+  border: solid var(--color-darker-green) !important;
+  background-color: var(--color-dark-green) !important;
+}
+
+.characters-btn-details {
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  border: solid var(--color-darker-green);
+  background-color: var(--color-dark-green);
+}
+
+.characters-btn-details:hover {
+  color: var(--color-white);
+  border: solid var(--color-darker-pink);
+  background-color: var(--color-dark-pink);
+}
+
+.characters-btn-details:active {
+  color: var(--color-white) !important;
+  border: solid var(--color-darker-pink) !important;
+  background-color: var(--color-dark-pink) !important;
+}

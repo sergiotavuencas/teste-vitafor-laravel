@@ -1,0 +1,32 @@
+.characters-content {
+  padding-top: 35px;
+}
+
+.characters-actions {
+  background-color: var(--color-light-pink);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: solid 5px var(--color-darker-pink);
+  width: 30%;
+  display: inline-block;
+}
+
+.characters-btn-page {
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  border: solid var(--color-darker-green);
+  background-color: var(--color-dark-green);
+}
+
+.characters-btn-page:hover {
+  color: var(--color-white);
+  border: solid var(--color-darker-pink);
+  background-color: var(--color-dark-pink);
+}
+
+.characters-btn-page:active {
+  color: var(--color-white) !important;
+  border: solid var(--color-darker-pink) !important;
+  background-color: var(--color-dark-pink) !important;
+}

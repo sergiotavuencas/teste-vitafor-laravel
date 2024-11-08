@@ -1,0 +1,76 @@
+.CharacterDetail {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.detail-content {
+  padding: 20px;
+  background-color: var(--color-light-green);
+  margin: 5%;
+  border: solid 5px var(--color-darker-green);
+  border-radius: 15px;
+}
+
+.detail-image {
+  height: 400px;
+  border-radius: 50%;
+  border: solid 5px var(--color-darker-green);
+}
+
+.detail-title,
+.detail-label,
+.detail-p {
+  font-family: var(--font-roboto);
+}
+
+.detail-title {
+  font-weight: bold;
+  color: var(--color-white);
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.detail-label {
+  color: var(--color-darker-green);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.detail-p {
+  color: var(--color-white);
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.detail-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.detail-btn-save {
+  font-family: var(--font-roboto);
+  font-size: 20px;
+  color: var(--color-darker-green);
+  border: solid var(--color-darker-green);
+  background-color: var(--color-white);
+  width: 150px;
+  height: 50px;
+}
+
+.detail-btn-save:hover {
+  font-family: var(--font-roboto);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-white);
+  border: solid var(--color-dark-pink);
+  background-color: var(--color-dark-pink);
+}
+
+.detail-btn-save:active {
+  font-family: var(--font-roboto) !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: var(--color-white) !important;
+  border: solid var(--color-dark-pink) !important;
+  background-color: var(--color-dark-pink) !important;
+}
