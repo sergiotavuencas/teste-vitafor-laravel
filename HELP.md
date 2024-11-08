@@ -10,6 +10,8 @@ Este projeto é uma aplicação desenvolvida com Laravel para o backend e React.
 - Git para controle de versão
 - Docker caso queira utilizar contêineres
 
+***OBS: Rodar com o Docker, faz com que as requisições sejam mais lentas, então será necessário um pouco de paciência.***
+
 ## Passos
 
 ### 1. Clonar o Repositório
@@ -22,14 +24,14 @@ Para os próximos passos recomendo que utilze dois terminais, um para rodar o ba
 
 ### 2. Rodando o back-end
 
-*** COM DOCKER ***
+**COM DOCKER**
 ```
 docker compose up -d
 ```
 
 ***OBS: Caso queira rodar a aplicação em outra porta, no arquivo "compose.yml", altere o valor "8000" em "ports" para a rota que desejar, mas será necessário alterar a configuração do front-end também, então antes de executar o terceiro passo, pule para a seção [Problema](#problema-com-a-rota-do-laravel)***
 
-*** SEM DOCKER ***
+**SEM DOCKER**
 ```
 cd back-end
 composer install
