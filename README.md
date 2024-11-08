@@ -67,7 +67,7 @@ Mini currículo com links para minhas redes sociais, um breve resumo, habilidade
 
 ## Rodando o projeto
 
-Consulte o ![HELP.md](./HELP.md) para as instruções de como rodar o projeto em sua máquina local.
+Consulte o [HELP.md](./HELP.md) para as instruções de como rodar o projeto em sua máquina local.
 
 ## GitHub
 [![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=sergiotavuencas)](https://github.com/anuraghazra/github-readme-stats)
