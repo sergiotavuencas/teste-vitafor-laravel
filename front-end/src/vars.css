@@ -1,0 +1,20 @@
+:root {
+    /* Fonts */
+    --font-roboto: 'Roboto', sans-serif;
+
+    /* Colors */
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+    --color-light-pink: rgb(232,154,199);
+    --color-dark-pink: rgb(185, 108, 153);
+    --color-darker-pink: rgb(146, 82, 119);
+    --color-light-red: rgb(214, 91, 91);
+    --color-dark-red: rgb(187, 77, 77);
+    --color-darker-red: rgb(160, 66, 66);
+    --color-light-green: rgb(151,206,76);
+    --color-dark-green: rgb(126, 172, 62);
+    --color-darker-green: rgb(103, 141, 50);
+    --color-light-blue: rgb(2,175,197);
+    --color-dark-blue: rgb(5, 137, 155);
+    --color-darker-blue: rgb(4, 106, 119);
+}
